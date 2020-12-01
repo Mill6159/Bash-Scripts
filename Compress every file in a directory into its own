@@ -1,0 +1,21 @@
+## Compress every file in a directory into its own compressed file
+
+# target path: /Users/RobbyMiller/TOSHIBA EXT/Research/Tube Worm/Genome_Stuff/Blast2GO/Stat_zip_test
+
+# Zip the file
+
+zip -r -X archive_name.zip "/Users/RobbyMiller/TOSHIBA EXT/Research/Tube Worm/Genome_Stuff/Blast2GO/Statistics_C1"
+
+# Unzip the file
+
+unzip archive_name.zip
+
+# TAR.BZ2 – Cross Platform
+
+# zip
+
+tar -jcvf archive_name.tar.bz2 "/Users/RobbyMiller/TOSHIBA EXT/Research/Tube Worm/Genome_Stuff/Blast2GO/Statistics_C1"
+
+# unzip
+
+tar -jxvf archive_name.tar.bz2

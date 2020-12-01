@@ -1,0 +1,43 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+\margl1440\margr1440\vieww19180\viewh11500\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 # rsync HowTo\
+\
+## If the file path for the SOURCE of DESTINATION contains spaces\
+## must enclose the statement in quotes\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs22 \cf2 \CocoaLigature0 rsync -av --progress /Users/RobbyMiller/Desktop/General\\ Stuff/ /Volumes/TOSHIBA\\ EXT/test2\
+\
+# -av verbose, grab all files down a tree of directories\
+\
+# \'97-progress, gives updates for long downloads\
+\
+# then followed by \{SOURCE\} \{DESTINATION\}\
+\
+\
+########################\
+# EXAMPLE INPUT & OUTPUT\
+########################\
+\
+### INPUT:\
+\
+dhcp-ccc-6037:Research RobbyMiller$ rsync -av --progress "/Volumes/USB DISK/Research/CHESS/Chromatography/Column_Resolution_Standards" "/Volumes/TOSHIBA EXT/Research/CHESS/SAXS/Data/HP/Chromatography"\
+\
+### OUTPUT:\
+\
+building file list ... \
+3 files to consider\
+Column_Resolution_Standards/\
+Column_Resolution_Standards/YMC-diol 300 No.2 5-300 Acetone BlueDex1.csv\
+     2186572 100%   89.31MB/s    0:00:00 (xfer#1, to-check=1/3)\
+Column_Resolution_Standards/YMC-diol 300 No.2 5-300 Acetone BlueDex2.csv\
+     2791446 100%    5.83MB/s    0:00:00 (xfer#2, to-check=0/3)\
+\
+sent 4978900 bytes  received 70 bytes  9957940.00 bytes/sec\
+total size is 4978018  speedup is 1.00}
